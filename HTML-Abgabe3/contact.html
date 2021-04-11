@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
+    <link rel="stylesheet" href="style.css"
 </head>
 <body>
     <header>
@@ -14,24 +15,22 @@
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="me.html">Thats me</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class= "active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         
         <h1>Contact</h1>
-     <form>
-            <label>Name</label>
-            <input type="text" name="name">
-            <label>Email:</label>
-            <input type="email" name="email" required><p>
-            <label>Subject:</label>
-            <input type="text" name="Subject"></p>
-            <label>Message:</label>
-            <textarea rows="7" name="Message" required></textarea>
-            <button type="submit">Press send</button>
+        <form>
+            <p><input type="text" name="firstname" placeholder="First name"></p>
+            <p><input type="text" name="lastname" placeholder="Last name"></p>
+            <p><input type="email" name="e-mail" required placeholder="E-Mail"></p>
+            <textarea rows="3" name="message" required placeholder="Message"></textarea>
+            <p id="Datenschutz">By sending the message, I accept our Privacy Policy. </p>
+            <button type="submit">submit</button>
+        </form>
 
-     </form><br>
+     
 
             <table>
                 <thead>
