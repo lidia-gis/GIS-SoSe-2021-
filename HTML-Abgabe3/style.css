@@ -82,6 +82,13 @@ form textarea{
     #Datenschutz{
         color: burlywood;
     }
+    #Projects{
+        color: fuchsia;
+
+    }
+
+    
+    
     .fa {
         padding: 20px;
         font-size: 30px;
@@ -125,7 +132,7 @@ form textarea{
     
     /*about me*/
     
-    h2{color: rgb(219, 87, 245);
+    h1{color: rgb(219, 87, 245);
     outline-style:dotted ;
     outline-width: 2px;}
     
