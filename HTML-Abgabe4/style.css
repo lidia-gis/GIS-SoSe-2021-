@@ -147,7 +147,53 @@ form textarea{
     .Spalte {
         border:5px solid rgb(232, 192, 255);
         margin: auto;
+
+     
+
+
     }
+
+    h1{
+       transition : color 4 ease-in-out 0s;
+       color:violet;
+       position:relative;
+       top: auto;
+       
+
+    }
+    h1:hover {
+        color: rgb(249, 185, 217);
+        top: 10px;
+    }
+
+
+
+    div a {color: darkred;}
+    div > td {color: darkred;}
+    h1 + p {color: rgb(232, 192, 255);}
+    footer * {color: rgb(249, 185, 217);}
+    a:hover {color: saddlebrown;}
+    p::before
+    div~p {color: rgb(232, 192, 255);}
+
+
+    @media only screen and (min-width: 768px) {
+        /* for desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+      }
+
+
     footer{
         width:auto;
         height:100px;
