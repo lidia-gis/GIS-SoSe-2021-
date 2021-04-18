@@ -1,0 +1,162 @@
+
+
+body { 
+    background-image: url(images/bg.png);
+    font-family: sans-serif;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* navigation */
+
+nav {
+    top: 0;
+    position:sticky}
+ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+li{
+    float: right;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color:white;
+    padding: 5px;
+    background-color:black;
+    text-decoration:none;
+}
+
+li a:hover { background-color: grey;}
+
+.active{
+    background-color: white ;
+    color:black;
+}
+/*meine home*/
+
+h1{
+    color: blueviolet;
+    background-color: blanchedalmond;
+}
+h2{
+    color: blueviolet;
+    background-color: blanchedalmond;
+}
+
+/*contact*/ 
+
+form input{
+	border-radius: 10px;
+	background: lightgrey;
+    padding: 5px;
+    border: 1px solid black;
+	
+}
+
+form textarea{
+	
+	font-family: sans-serif;
+	background: lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+	table{
+        width: 0px;
+        padding: 5px;
+        border: 10px; color: blueviolet;
+        margin: auto; color: blueviolet;
+    }
+
+    #Datenschutz{
+        color: burlywood;
+    }
+    #Projects{
+        color: fuchsia;
+
+    }
+
+    
+    
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px 2px;
+        border-radius: 50%;
+      }
+      
+      
+    .fa:hover {
+        opacity:0.7;
+    }
+    
+    .fa-facebook {
+        background: #a421cc;
+        color: white;
+    }
+      
+    .fa-instagram {
+        background: #55ACEE;
+        color: white;
+        
+    } 
+    
+        
+    footer{
+        width:auto;
+        height:100px;
+        background-color: pink;
+        
+    }
+    
+    homepage{
+        color:rgb(249, 185, 217);
+        font-size:15px;
+        outline-style:none;
+        position:static;
+    }
+    
+    /*about me*/
+    
+    h1{color: rgb(219, 87, 245);
+    outline-style:dotted ;
+    outline-width: 2px;}
+    
+    table{
+    
+        width: 0px;
+        padding: 5px;
+        border: 10px;
+        margin: auto;
+        text-align: center;
+    }
+    .Spalte {
+        border:5px solid rgb(232, 192, 255);
+        margin: auto;
+    }
+    footer{
+        width:auto;
+        height:100px;
+        background-color: #bbb0f5ce;
+       
+        
+    }
+    
+    
+    
+   
+
