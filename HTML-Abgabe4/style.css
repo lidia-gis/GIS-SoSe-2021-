@@ -11,16 +11,12 @@ body {
 header{
     width:auto;
     height:50px;
-    background-color: #bbb0f584;
+    background-color: #662480ad;
     top: 0;
     position:sticky;
 }
 
-footer{
-    width:auto;
-    height:100px;
-    background-color: #bbb0f584; 
-}
+
 
 
 
@@ -134,7 +130,7 @@ form textarea{
     footer{
         width:auto;
         height:100px;
-        background-color: pink;
+        background-color: rgb(138, 39, 158);
         
     }
     
@@ -186,19 +182,14 @@ form textarea{
     div a {color: darkred;}
     div > td {color: darkred;}
     h1 + p {color: rgb(232, 192, 255);}
-    footer * {color: rgb(249, 185, 217);}
+    footer * {color: rgb(63, 17, 70);}
     a:hover {color: saddlebrown;}
     p::before
     div~p {color: rgb(232, 192, 255);}
 
-    * {
-        box-sizing: border-box;
-      }
+    
       
-      /* for mobile phones: */
-      [class*="col-"]{
-        width: 100%;
-      }
+      
 
 
 
@@ -233,25 +224,39 @@ form textarea{
         .col-s-11 {width: 91.66%;}
         .col-s-12 {width: 100%;}
       }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      
-      video{
-        max-width: 100%;
-        height: auto;
+      @media screen and (max-width: 1028) {
+          h1{
+              width: 500px;
+              margin: 0;
+          }
+          h2{
+              width: 500px;
+              margin: 0;
+          }
+          nav, form{
+
+        width: 500px;
+        margin: 0%;
+          }
+
+
+          p, ul{
+              width: 500px;
+              margin: 0%;
+          }
+          medien{
+              width: 500px;
+              margin: 0%;
+          }
+
+          img, video{ 
+              width: 300px;
+          }
       }
       
 
 
-    footer{
-        width:auto;
-        height:100px;
-        background-color: #bbb0f5ce;
-       
-        
-    }
+    
     
     
     
