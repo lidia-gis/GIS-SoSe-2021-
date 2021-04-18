@@ -162,7 +162,7 @@ form textarea{
 
     }
     h1:hover {
-        color: rgb(249, 185, 217);
+        color: rgb(199, 27, 113);
         top: 10px;
     }
 
@@ -175,6 +175,16 @@ form textarea{
     a:hover {color: saddlebrown;}
     p::before
     div~p {color: rgb(232, 192, 255);}
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* for mobile phones: */
+      [class*="col-"]{
+        width: 100%;
+      }
+
 
 
     @media only screen and (min-width: 768px) {
@@ -192,6 +202,32 @@ form textarea{
         .col-11 {width: 91.66%;}
         .col-12 {width: 100%;}
       }
+
+      @media only screen and (min-width:600px) {
+        /* for tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      video{
+        max-width: 100%;
+        height: auto;
+      }
+      
 
 
     footer{
