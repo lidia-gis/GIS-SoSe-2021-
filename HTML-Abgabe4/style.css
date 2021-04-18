@@ -8,6 +8,21 @@ body {
     text-align: center;
 }
 
+header{
+    width:auto;
+    height:50px;
+    background-color: #bbb0f584;
+    top: 0;
+    position:sticky;
+}
+
+footer{
+    width:auto;
+    height:100px;
+    background-color: #bbb0f584; 
+}
+
+
 
 /* navigation */
 
