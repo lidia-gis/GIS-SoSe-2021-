@@ -129,7 +129,7 @@ console.log(split(arr, 1, 2));
 console.log(split(arr, 2, 0)); // Bonus c)
 console.log(split(arr, -1, 2)); // Bonus c)
 console.log(split(arr, 0, 7)); // Bonus c)
-/*Aufgabe 3 a */
+/*Aufgabe 3 */
 let canvas = document.getElementById("myCanvas");
 let context = canvas.getContext("2d");
 // Himmel
@@ -168,7 +168,6 @@ context.lineTo(730, 250);
 context.lineTo(600, 50);
 context.fill();
 context.closePath();
-/*Aufgabe 3 B & C */
 class Rechteck {
     constructor() {
         this.maxWidth = 750;
@@ -183,7 +182,6 @@ class Rechteck {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
     }
-    /*Aufgabe 3 D & C */
     drawRect() {
         context.beginPath();
         context.fillStyle = "grey";

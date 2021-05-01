@@ -148,7 +148,7 @@ console.log(split(arr, 2, 0));     // Bonus c)
 console.log(split(arr, -1, 2));    // Bonus c)
 console.log(split(arr, 0, 7));     // Bonus c)
 
-/*Aufgabe 3 a */ 
+/*Aufgabe 3 */ 
 
 let canvas: HTMLCanvasElement = <HTMLCanvasElement>document.getElementById("myCanvas");
 let context: CanvasRenderingContext2D = canvas.getContext("2d");
@@ -193,8 +193,7 @@ context.lineTo(730, 250);
 context.lineTo(600, 50);
 context.fill();
 context.closePath();
-
-/*Aufgabe 3 B & C */ 
+ 
 class Rechteck {
     x1: number;
     y1: number;
@@ -217,7 +216,6 @@ class Rechteck {
         return Math.floor(Math.random() * (max - min)) + min;
     }
 
-/*Aufgabe 3 D & C */ 
     drawRect(): void {
         context.beginPath();
         context.fillStyle = "grey";
