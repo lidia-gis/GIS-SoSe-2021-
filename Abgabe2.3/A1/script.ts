@@ -12,7 +12,7 @@ drawDiv.appendChild(sky);
 
 // Wiese
 let grass: HTMLParagraphElement = document.createElement("div");
-grass.style.backgroundColor = "green";
+grass.style.backgroundColor = "darkgreen";
 grass.style.width = "100%";
 grass.style.height = "200px";
 grass.style.position = "absolute";
@@ -21,13 +21,13 @@ drawDiv.appendChild(grass);
 
 // Haus
 let roof: HTMLParagraphElement = document.createElement("div");
-roof.setAttribute("style", "width: 0; height: 0; border-style: solid; border-width: 0 130px 200px 130px; border-color: transparent transparent #ff0000 transparent;");
+roof.setAttribute("style", "width: 0; height: 0; border-style: solid; border-width: 0 130px 200px 130px; border-color: transparent transparent #670000 transparent;");
 roof.style.position = "absolute";
 roof.style.top = "70px";
 roof.style.right = "50px";
 drawDiv.appendChild(roof);
 let house: HTMLParagraphElement = document.createElement("div");
-house.style.backgroundColor = "beige";
+house.style.backgroundColor = "pink";
 house.style.width = "200px";
 house.style.height = "200px";
 house.style.position = "absolute";
@@ -45,7 +45,7 @@ treeBottom.style.top = "140px";
 treeBottom.style.left = "175px";
 drawDiv.appendChild(treeBottom);
 let treeTop: HTMLParagraphElement = document.createElement("div");
-treeTop.style.backgroundColor = "darkgreen";
+treeTop.style.backgroundColor = "green";
 treeTop.style.width = "200px";
 treeTop.style.height = "200px";
 treeTop.style.position = "absolute";
@@ -80,7 +80,7 @@ function newRect(): void {
     console.log("New Rect");
     let rect: HTMLParagraphElement = document.createElement("div");
     rect.style.position = "absolute";
-    rect.style.backgroundColor = "purple";
+    rect.style.backgroundColor = "grey";
     rect.style.border = "solid";
     let width: number = getRandomInt(10, 300);
     let height: number = getRandomInt(10, 200);
