@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formular</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+        </header>
+        
+        <main>
+            <form action=" https://lidiakifle.herokuapp.com/" method="GET">
+                <input type="radio" id="maennlich" name="Geschlecht" value="maennlich">
+                <label for="maennlich">maennlich</label>
+                <input type="radio" id="weiblich" name="Geschlecht" value="weiblich">
+                <label for="weiblich">weiblich</label>
+                <input type="radio" id="anderes" name="Geschlecht" value="anderes">
+                <label for="anderes">diverse</label>
+        
+                <p><label for="vorname">vorname:</label></p>
+                <input type="text" id="vorname" name="vorname"> 
+                <p><label for="nachname">nachnaem:</label></p>
+                <input type="text" id="nachname" name="nachname">
+                <p><label for="straße">Addresse und Nummer:</label></p>
+                <input type="text" id="straße" name="straße">
+                <p><label for="postleitzahl">Post Code:</label></p>
+                <input type="text" id="postleitzahl" name="postleitzahl">
+                <p><label for="Sadt">Stadt:</label></p>
+                <input type="text" id="Stadt" name="Stadt">
+    
+                <p><button type="einreichen">Send</button></p>
+            </form>
+        </main>
+
+        <footer>
+        </footer>
+
+    </body>
+</html>
