@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+        <meta charset="utf-8"/>
+        <meta name="Autor" content="Lidia Kifle"/>
+        <meta name="Beschreibung" content="P_3_2" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>  
+</head>
+<body>
+    <header>
+        <h4>3.2</h4>
+    </header>
+    
+    <main>
+        <h3>Login</h3> 
+        <form action="https://lidiakifle.herokuapp.com/" method="port">
+            <input type="radio" id="maennlich" name="Geschlecht" value="maennlich">
+            <label for="maennlich">Maennlich</label>
+            <input type="radio" id="weiblich" name="Geschlecht" value="weiblich">
+            <label for="weiblich">Weiblich</label>
+            <input type="radio" id="anderes" name="gGeschlecht" value="anderes">
+            <label for="anderes">divers</label>
+    
+            <p><label>Vorname:</label></p>
+            <input type="text" id="vorname" name="vorname"> 
+            <p><label>Nachname:</label></p>
+            <input type="text" id="nachname" name="nachname">
+            <p><label>Addresse and Nummer:</label></p>
+            <input type="text" id="straße" name="straße">
+            <p><label>Postleitzahl:</label></p>
+            <input type="text" id="plz" name="plz">
+            <p><label>Stadt:</label></p>
+            <input type="text" id="Stadt" name="Stadt">
+
+            <p><button type="button" id="sendJSON">Send to JSON</button></p>
+            <p><button type="button" id="sendHTML">Send to HTML</button></p>
+        </form>
+        <div id="solution"></div>
+    </main>
+
+    <footer>
+    </footer>
