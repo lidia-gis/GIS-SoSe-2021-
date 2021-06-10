@@ -1,4 +1,4 @@
-namespace A2_3 {
+/**namespace A2_3 {
 export let posibilityTop: Posibility[] = [];
 export let posibilityMiddle: Posibility[] = [];
 export let posibilityBottom: Posibility[] = [];
@@ -22,4 +22,4 @@ let pic3Top: Posibility = new Posibility("Beyonce3 - Top", 0, path + "images/top
 let pic3Middle: Posibility = new Posibility("Beyonce3 - Middle", 1, path + "images/middle/beyonce3_middle.png");
 let pic3Bottom: Posibility = new Posibility("Beyonce3 - Bottom", 2, path + "images/bottom/beyonce3_bottom.png");
 
-}
+}*/

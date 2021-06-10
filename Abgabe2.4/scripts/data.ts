@@ -1,4 +1,4 @@
-namespace A2_4 {
+/**namespace A2_4 {
 export let posibilityTop: Posibility[] = [];
 export let posibilityMiddle: Posibility[] = [];
 export let posibilityBottom: Posibility[] = [];
@@ -43,4 +43,4 @@ export function allPosArrayFromJSON(jsonStr: string): void {
     });
 }
 
-}
+}*/
