@@ -15,7 +15,7 @@ var Aufgabe3_2;
         let answer = await fetch(url);
         console.log("Response: ", answer);
         let json = await answer.json();
-        /*console.log(json);*/
+        console.log(json);
     }
     async function sendHTML(_ev) {
         _ev.preventDefault();
@@ -27,6 +27,10 @@ var Aufgabe3_2;
         url = url + "?" + query.toString();
         let answer = await fetch(url);
         let answerText = await answer.text();
+        let body = document.querySelector("body");
+        let result = document.getElementById("solution");
+        result.innerHTML = answerText;
+        body.appendChild(result);
     }
 })(Aufgabe3_2 || (Aufgabe3_2 = {}));
 //# sourceMappingURL=script.js.map

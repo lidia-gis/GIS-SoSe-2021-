@@ -15,7 +15,7 @@ namespace Aufgabe3_2 {
         let answer: Response = await fetch(url);
         console.log("Response: ", answer);
         let json: JSON = await answer.json();
-        /*console.log(json);*/
+        console.log(json);
      }
 
     async function sendHTML(_ev: Event): Promise<void> {
@@ -30,13 +30,11 @@ namespace Aufgabe3_2 {
         let answerText: string = await answer.text();
         
        
-       /* let body: HTMLBodyElement = document.querySelector("body");
+        let body: HTMLBodyElement = document.querySelector("body");
         let result: HTMLParagraphElement = <HTMLDivElement>document.getElementById("solution");
         result.innerHTML = answerText;
-        body.appendChild(result);*/
-        interface IResponse {
-            [key: string]: string;
-        }
+        body.appendChild(result);
+       
     }
     
  }
