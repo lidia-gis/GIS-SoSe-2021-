@@ -13,7 +13,7 @@ var Aufgabe3_2;
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
         let answer = await fetch(url);
-        console.log("Response: ", answer);
+        /*console.log("Response: ", answer);*/
         let json = await answer.json();
         console.log(json);
     }
