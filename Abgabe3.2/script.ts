@@ -29,10 +29,14 @@ namespace Aufgabe3_2 {
         let answer: Response = await fetch(url);
         let answerText: string = await answer.text();
         
-        
-        let body: HTMLBodyElement = document.querySelector("body");
+       
+       /* let body: HTMLBodyElement = document.querySelector("body");
         let result: HTMLParagraphElement = <HTMLDivElement>document.getElementById("solution");
         result.innerHTML = answerText;
-        body.appendChild(result);
+        body.appendChild(result);*/
+        interface IResponse {
+            [key: string]: string;
+        }
     }
+    
  }

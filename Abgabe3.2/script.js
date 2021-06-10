@@ -27,10 +27,6 @@ var Aufgabe3_2;
         url = url + "?" + query.toString();
         let answer = await fetch(url);
         let answerText = await answer.text();
-        let body = document.querySelector("body");
-        let result = document.getElementById("solution");
-        result.innerHTML = answerText;
-        body.appendChild(result);
     }
 })(Aufgabe3_2 || (Aufgabe3_2 = {}));
 //# sourceMappingURL=script.js.map
