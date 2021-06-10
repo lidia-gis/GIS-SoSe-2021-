@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.P_3_2Server = void 0;
+exports.Aufgabe_3_2Server = void 0;
 const Http = require("http");
 const Url = require("url");
-var P_3_2Server;
-(function (P_3_2Server) {
+var Aufgabe_3_2Server;
+(function (Aufgabe_3_2Server) {
     console.log("Starting server"); //In der Konsole wird "Starting Server"
     let port = Number(process.env.PORT); // verwendet aktuellen port
     if (!port)
@@ -17,13 +17,13 @@ var P_3_2Server;
         console.log("Listening"); // "Listening" wird in der Konsole ausgegeben 
     }
     function handleRequest(_request, _response) {
-        console.log("I hear voices!"); // "I hear voices" wird ausgegeben 
+        console.log("I hear voices!"); // "I hear voices" wird ausgegeben
         _response.setHeader("Access-Control-Allow-Origin", "*"); //Zugangsberechtigung 
         let url = Url.parse(_request.url, true);
         let query = url.query;
         if (url.pathname == "/html") {
             _response.setHeader("content-type", "text/html; charset=utf-8");
-            for (let key in query) { //alle keys durchgehen 
+            for (let key in query) { //alle keys durchgehen
                 let value = query[key]; //verwende für jeden key  den value 
                 _response.write("<p>KEY: " + key + ", Value: " + value + "</p>"); //die Verbindung von key und value aufgelistet 
             }
@@ -34,5 +34,5 @@ var P_3_2Server;
         }
         _response.end();
     }
-})(P_3_2Server = exports.P_3_2Server || (exports.P_3_2Server = {}));
+})(Aufgabe_3_2Server = exports.Aufgabe_3_2Server || (exports.Aufgabe_3_2Server = {}));
 //# sourceMappingURL=bspServerCode.js.map

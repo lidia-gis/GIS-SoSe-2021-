@@ -1,11 +1,11 @@
 "use strict";
-var P_3_2;
-(function (P_3_2) {
+var Aufgabe3_2;
+(function (Aufgabe3_2) {
     let btSendJSON = document.getElementById("sendJSON");
     btSendJSON.addEventListener("click", sendData);
     let btSendHTML = document.getElementById("sendHTML");
     btSendHTML.addEventListener("click", sendHTML);
-    //let urlServer: string = "http://localhost:8100";
+    // let urlServer: string = "http://localhost:8100";
     async function sendData() {
         let urlServer = "https://lidiakifle.herokuapp.com/";
         let formData = new FormData(document.forms[0]);
@@ -32,5 +32,5 @@ var P_3_2;
         result.innerHTML = answerText;
         body.appendChild(result);
     }
-})(P_3_2 || (P_3_2 = {}));
+})(Aufgabe3_2 || (Aufgabe3_2 = {}));
 //# sourceMappingURL=script.js.map

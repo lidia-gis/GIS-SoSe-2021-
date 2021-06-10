@@ -1,7 +1,7 @@
 import * as Http from "http";
 import * as Url from "url";
 
-export namespace P_3_2Server {
+export namespace Aufgabe_3_2Server {
     console.log("Starting server"); //In der Konsole wird "Starting Server"
     let port: number = Number(process.env.PORT); // verwendet aktuellen port
     if (!port) 
@@ -20,21 +20,24 @@ export namespace P_3_2Server {
     }
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
-        console.log("I hear voices!"); // "I hear voices" wird ausgegeben 
+        console.log("I hear voices!"); // "I hear voices" wird ausgegeben
+        
         _response.setHeader("Access-Control-Allow-Origin", "*"); //Zugangsberechtigung 
         let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
         let query: Query = url.query;
 
-        if (url.pathname == "/html") { 
-            _response.setHeader("content-type", "text/html; charset=utf-8");     
-            for (let key in query) {    //alle keys durchgehen 
+        if (url.pathname == "/html") {       
+            _response.setHeader("content-type", "text/html; charset=utf-8");
+            for (let key in query) {     //alle keys durchgehen
                 let value: string | string[] = query[key];  //verwende für jeden key  den value 
                 _response.write("<p>KEY: " + key + ", Value: " + value + "</p>"); //die Verbindung von key und value aufgelistet 
+
             }
         }
         if (url.pathname == "/json") {
-            _response.setHeader("content-type", "application/json");      
+            _response.setHeader("content-type", "application/json");
             _response.write(JSON.stringify(query));
+            
         }
         _response.end();
     }

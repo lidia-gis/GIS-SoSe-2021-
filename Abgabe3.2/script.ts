@@ -1,11 +1,11 @@
-namespace P_3_2 {
+namespace Aufgabe3_2 {
     
     let btSendJSON: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendJSON");
     btSendJSON.addEventListener("click", sendData);
     let btSendHTML: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendHTML");
     btSendHTML.addEventListener("click", sendHTML);
     
-    //let urlServer: string = "http://localhost:8100";
+   // let urlServer: string = "http://localhost:8100";
     async function sendData(): Promise<void> {
         let urlServer: string = "https://lidiakifle.herokuapp.com/";
         let formData: FormData = new FormData(document.forms[0]);
@@ -28,6 +28,7 @@ namespace P_3_2 {
         url = url + "?" + query.toString();
         let answer: Response = await fetch(url);
         let answerText: string = await answer.text();
+        
         
         let body: HTMLBodyElement = document.querySelector("body");
         let result: HTMLParagraphElement = <HTMLDivElement>document.getElementById("solution");
