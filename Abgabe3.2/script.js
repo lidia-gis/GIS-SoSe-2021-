@@ -15,7 +15,7 @@ var Aufgabe3_2;
         let answer = await fetch(url);
         console.log("Response: ", answer);
         let json = await answer.json();
-        console.log(json);
+        /*console.log(json);*/
     }
     async function sendHTML(_ev) {
         _ev.preventDefault();
