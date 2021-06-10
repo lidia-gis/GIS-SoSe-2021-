@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node Abgabe3.2/bspServerCode.js",
+    "start": "node Abgabe 3.2/bspServerCode.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
