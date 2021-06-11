@@ -19,15 +19,15 @@ var A2_4;
         loadImages();
         if (path == "top.html") {
             selected = A2_4.selectedElements.top;
-            addDetailWindow(A2_4.posibilityTop);
+            addDetailWindow(posibilityTop);
         }
         else if (path == "middle.html") {
             selected = A2_4.selectedElements.middle;
-            addDetailWindow(A2_4.posibilityMiddle);
+            addDetailWindow(posibilityMiddle);
         }
         else if (path == "bottom.html") {
             selected = A2_4.selectedElements.bottom;
-            addDetailWindow(A2_4.posibilityBottom);
+            addDetailWindow(posibilityBottom);
         }
         if (A2_4.selectedElements.top == undefined || A2_4.selectedElements.middle == undefined || A2_4.selectedElements.bottom == undefined) {
             btSpeichern.textContent = "weiter";

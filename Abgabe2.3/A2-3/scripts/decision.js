@@ -7,15 +7,15 @@ var A2_3;
     window.addEventListener("load", loadContent);
     function loadContent() {
         if (path == "top.html") {
-            selected = A2_3.selectedElements.top;
-            addDetailWindow(A2_3.posibilityTop);
+            selected = selectedElements.top;
+            addDetailWindow(posibilityTop);
         }
         else if (path == "middle.html") {
-            addDetailWindow(A2_3.posibilityMiddle);
+            addDetailWindow(posibilityMiddle);
         }
         else if (path == "bottom.html") {
-            selected = A2_3.selectedElements.bottom;
-            addDetailWindow(A2_3.posibilityBottom);
+            selected = selectedElements.bottom;
+            addDetailWindow(posibilityBottom);
         }
     }
     function addDetailWindow(images) {
@@ -50,13 +50,13 @@ var A2_3;
     btAbbruch.addEventListener("click", abbruchSelection);
     function speichernSelection() {
         if (path == "top.html") {
-            A2_3.selectedElements.top = selected;
+            selectedElements.top = selected;
         }
         else if (path == "middle.html") {
-            A2_3.selectedElements.middle = selected;
+            selectedElements.middle = selected;
         }
         else if (path == "bottom.html") {
-            A2_3.selectedElements.bottom = selected;
+            selectedElements.bottom = selected;
         }
         window.open("index.html", "_self");
         console.log("selected " + selected.name);

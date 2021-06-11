@@ -7,13 +7,13 @@ var A2_3;
             this.type = _type;
             this.link = _link;
             if (this.type == 0) {
-                A2_3.posibilityTop.push(this);
+                posibilityTop.push(this);
             }
             else if (this.type == 1) {
-                A2_3.posibilityMiddle.push(this);
+                posibilityMiddle.push(this);
             }
             else if (this.type == 2) {
-                A2_3.posibilityBottom.push(this);
+                posibilityBottom.push(this);
             }
         }
     }
@@ -25,10 +25,10 @@ var A2_3;
         let imageBottom = document.getElementById("imgBottom");
         window.addEventListener("load", loadImages);
         function loadImages() {
-            imageTop.src = A2_3.selectedElements.top.link;
-            imageMiddle.src = A2_3.selectedElements.middle.link;
-            imageBottom.src = A2_3.selectedElements.bottom.link;
-            console.log(A2_3.selectedElements);
+            imageTop.src = selectedElements.top.link;
+            imageMiddle.src = selectedElements.middle.link;
+            imageBottom.src = selectedElements.bottom.link;
+            console.log(selectedElements);
         }
         let btEditOben = document.getElementById("btOben");
         btEditOben.addEventListener("click", openDetailTop);

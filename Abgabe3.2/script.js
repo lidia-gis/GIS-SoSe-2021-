@@ -7,7 +7,7 @@ var Aufgabe3_2;
     btSendHTML.addEventListener("click", sendHTML);
     // let urlServer: string = "http://localhost:8100";
     async function sendData() {
-        let urlServer = "https://lidiakifle.herokuapp.com/";
+        let urlServer = "https://lidiakifle.herokuapp.com";
         let formData = new FormData(document.forms[0]);
         let url = urlServer + "/json";
         let query = new URLSearchParams(formData);
@@ -19,7 +19,7 @@ var Aufgabe3_2;
     }
     async function sendHTML(_ev) {
         _ev.preventDefault();
-        let urlServer = "https://lidiakifle.herokuapp.com/";
+        let urlServer = "https://lidiakifle.herokuapp.com";
         let formData = new FormData(document.forms[0]);
         let url = urlServer + "/html";
         let query = new URLSearchParams(formData);
