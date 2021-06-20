@@ -5,7 +5,7 @@ import * as Mongo from "mongodb";
 export namespace Aufgabe3_4 {
 
     let mongoCollection: Mongo.Collection;
-    let mongoUrl: string = "mongodb+srv://User1:paris2020@lidia-gis-2021.p8uhm.mongodb.net";
+    let mongoUrl: string = "mongodb+srv://Lidia:paris2020@lidia-gis-2021.p8uhm.mongodb.net";
     
 
     let port: number = Number(process.env.PORT);

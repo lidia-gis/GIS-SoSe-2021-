@@ -7,7 +7,7 @@ const Mongo = require("mongodb");
 var Aufgabe3_4;
 (function (Aufgabe3_4) {
     let mongoCollection;
-    let mongoUrl = "mongodb+srv://User1:paris2020@lidia-gis-2021.p8uhm.mongodb.net";
+    let mongoUrl = "mongodb+srv://Lidia:paris2020@lidia-gis-2021.p8uhm.mongodb.net";
     let port = Number(process.env.PORT);
     if (!port)
         port = 8100; //Port wird auf 8100 gesetzt
