@@ -1,4 +1,5 @@
-
+node_modules
+db
 node_modules/@types/node/async_hooks.d.ts
 node_modules/@types/node/base.d.ts
 node_modules/@types/node/buffer.d.ts
